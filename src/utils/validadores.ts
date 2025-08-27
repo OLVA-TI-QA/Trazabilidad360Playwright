@@ -10,3 +10,14 @@ export function validarDatosExcel(datos: any[], sheetName: string) {
 
   console.log(`✅ Excel '${sheetName}' tiene ${datos.length} registros.`)
 }
+
+export function procesarValorCeldaExcel(valorCelda: any): string | number | null {
+  // Regla 1: Si el valor es el string literal 'null'
+  if (valorCelda === 'null') return null;
+
+  // Regla 2: Si la celda está vacía (la librería devuelve null o undefined)
+  if (valorCelda === null || valorCelda === undefined) return '';
+
+  // Regla 3: Para todo lo demás, devuelve el valor tal cual
+  return valorCelda;
+}
