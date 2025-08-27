@@ -21,7 +21,7 @@ test.describe('Pruebas de la API de WhatsApp con Excel', () => {
   })
 
   // Test principal con múltiples envíos
-  test('Enviar peticiones primera vez tipo 1 y validar respuestas correctas', async () => {
+  test('Enviar peticiones y validar respuestas correctas', async () => {
     // Aumenta el tiempo de espera a 80 segundos (80000ms)
     test.setTimeout(80000)
 
@@ -133,6 +133,4 @@ test.describe('Pruebas de la API de WhatsApp con Excel', () => {
     expect(mensajesEnviados).toBe(mensajesEnviadosExcel) // Validación de la cantidad de mensajes enviados comparados entre los esperados y obtenidos
     expect(mensajesNoEnviados).toBe(mensajesNoEnviadosExcel) // Validación de la cantidad de mensajes no enviados comparados entre los esperados y obtenidos
   })
-
-  test('testito', async () => {})
 })

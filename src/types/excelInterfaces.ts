@@ -17,4 +17,7 @@ export interface ExcelValidacionExportNotificaciones {
   valorEsperado: boolean
   valorObtenido: boolean
   correcto: boolean
+  statusEsperado?: string
+  statusObtenido?: string
+  mensajeErrorObtenido?: string
 }

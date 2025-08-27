@@ -16,7 +16,7 @@ export class Olvaexpress {
     return this
   }
 
-  public async postSendWhatsapp(celular: string, id_gestion: number, tipo: number) {
+  public async postSendWhatsapp(celular: string | number | null | undefined, id_gestion: string | number | null | undefined, tipo: string | number | null | undefined) {
     const sendwhatsappResponse = await this.baseUrl!.post('/mobile/whatsapp/send', {
       data: {
         celular,
