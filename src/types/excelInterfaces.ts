@@ -20,4 +20,7 @@ export interface ExcelValidacionExportNotificaciones {
   statusEsperado?: string
   statusObtenido?: string
   mensajeErrorObtenido?: string
+  horaEjecucion?: string
+  numeroRequest?: number
+  enviado?: boolean
 }

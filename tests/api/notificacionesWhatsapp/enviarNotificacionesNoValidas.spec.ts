@@ -138,7 +138,7 @@ test.describe('Pruebas de la API de WhatsApp con Excel', () => {
 
         exportarResultadosGenerico<ExcelValidacionExportNotificaciones>({
             data: resultadosValidacion,
-            nombreBase: 'resultados_notificaciones_whatsapp',
+            nombreBase: 'resultados_notificaciones_no_validas_whatsapp',
             headers: ['CELULAR', 'ID GESTION', 'TIPO', 'RESULTADO ESPERADO', 'RESULTADO OBTENIDO', 'ES CORRECTO?', 'STATUS ESPERADO', 'STATUS OBTENIDO', 'MENSAJE ERROR OBTENIDO'],
             extraerCampos: [
                 (r) => r.celular,
